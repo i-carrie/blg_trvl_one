@@ -6,11 +6,19 @@ body {
   margin: 0;
   width: auto;
   height: auto;
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
 }
 p{
   margin: 0;
   padding: 0;
 }
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -19,14 +27,18 @@ ul {
   padding-inline-start: 0px;
   margin: 0px;
 }
+img {
+  max-width: 100%;
+  border-style: none;
+}
+
 
 
 /*=======  PC ==========*/
 @media screen and (max-width: 1600px) {
-  body {
+  /* body {
       background-color: beige;
-      font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
-  }
+  } */
   .logo {
     background-color: white;
     padding-left: 16px;
@@ -38,6 +50,11 @@ ul {
     padding-left: 16px;
     font-size: 14px;
     color: white;
+    font-family: "Noto Sans", "Noto Sans JP";
+  }
+  li a {
+    text-decoration: none;
+    color: white;
   }
   .one {
     display: inline-block;
@@ -45,11 +62,14 @@ ul {
     height: 39px;
     line-height: 39px;
   }
+  /* a {
+    text-decoration: none;
+  } */
   main {
     padding: 0 16px;
   }
   .upper {
-    background-color: plum;
+    /* background-color: plum; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,10 +83,17 @@ ul {
   }
   .upper-text {
     padding: 10px 0;
+    font-size: 16px;
+    color: #333;
   }
   .upper-goto {
     padding: 0 0 40px;
     text-align: center;
+  }
+  p a {
+    text-decoration-color: #333;
+    font-size: 14px;
+    color: #333
   }
   .content {
     display: flex;
@@ -75,10 +102,15 @@ ul {
   }
   .content-left {
     width: 65%;
-    background-color: green;
+    /* background-color: green; */
   }
   .main-info-list {
     display: inline-block;
+  }
+  .main-info-list a {
+    font-size: 14px;
+    color:#333;
+    text-decoration: none;
   }
   .main-info-list.date {
     padding-right: 20px;
@@ -87,7 +119,11 @@ ul {
     padding: 70px 0;
   }
   .main-pix-title {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  .main-pix-title a {
+    color: #333;
+    text-decoration: none;
   }
   .main-pix-pix {
     padding: 5px 0;
@@ -95,6 +131,8 @@ ul {
   .main-pix-text {
     padding-left: 40px;
     padding-right: 35px;
+    color: #333;
+    font-size: 16px;
   }
   .main-goto {
     padding-top: 20px;
@@ -102,7 +140,7 @@ ul {
   }
   .content-right {
     width: 35%;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     margin-left: 30px;
   }
   .label {
@@ -114,6 +152,15 @@ ul {
   }
   .author-name {
     padding: 30px 0;
+  }
+  .author-prof {
+    color: #333;
+    font-size: 14px;
+  }
+  .ranking-text a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
   }
   .ranking-title {
     padding: 40px 0 20px;
@@ -131,6 +178,11 @@ ul {
     padding: 10px 0 10px 20px;
     border-top: solid 1px #777;
   }
+  .archive-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
   .archive-list.last {
     border-bottom: solid 1px #777;
   }
@@ -138,7 +190,7 @@ ul {
     margin-top: 150px;
     padding-top: 50px;
     width: 100%;
-    background-color: lightgray;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -148,9 +200,14 @@ ul {
     padding: 0 16px;
     width: 33.3%;
   }
-  .footer-title {
+
+  /* .footer-title {
     padding-bottom: 30px;
+  } */
+  h3 {
+    padding-bottom: 30px;   
   }
+
   .footer-menu-sbj {
     border-top: solid 1px #777;
     padding: 15px;
@@ -159,8 +216,22 @@ ul {
   .footer-menu-sbj.qa {
     border-bottom: solid 1px #777;
   }
+  .footer-menu-sbj a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+  }
+  .footer-subMenu a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+  }
   .footer-text {
     padding-bottom: 20px;
+  }
+  .footer-info {
+    background-color: white;
+    min-height: 250px;
   }
   .bottom {
     margin: 0 auto;
@@ -175,9 +246,9 @@ ul {
 
 /*=======  Mobile ==========*/
 @media screen and (max-width: 500px) {
-  body {
+  /* body {
       background-color: azure;
-  }
+  } */
   .logo {
     background-color: white;
     padding-left: 16px;
@@ -195,7 +266,7 @@ ul {
     color: white;
   }
   .upper {
-    background-color: plum;
+    /* background-color: plum; */
     display: flex;
     flex-direction: column;
   }
@@ -207,6 +278,7 @@ ul {
   }
   .upper-pix.center {
     padding-left: 0;
+    padding-right: 0;
   }
   .upper-goto {
     padding-bottom: 0;
@@ -219,11 +291,11 @@ ul {
     flex-direction: column;
   }
   .content-left {
-    background-color: green;
+    /* background-color: green; */
     width: 100%;
   }
   .content-right {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     width: 100%;
     margin: 0 auto;
   }
@@ -236,7 +308,7 @@ ul {
   footer {
     margin-top: 130px;
     padding-top: 50px;
-    background-color: lightgray;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
   }
